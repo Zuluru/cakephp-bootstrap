@@ -1,6 +1,6 @@
 <?php
 
-namespace Zuluru\Bootstrap\Controller;
+namespace ZuluruBootstrap\Controller;
 
 use App\Controller\AppController as BaseController;
 

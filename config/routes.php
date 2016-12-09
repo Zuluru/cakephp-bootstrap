@@ -2,8 +2,8 @@
 use Cake\Routing\Router;
 
 Router::plugin(
-    'Bootstrap',
-    ['path' => '/bootstrap'],
+    'ZuluruBootstrap',
+    ['path' => '/zulurubootstrap'],
     function ($routes) {
         $routes->fallbacks('DashedRoute');
     }
