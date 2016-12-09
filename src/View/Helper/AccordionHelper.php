@@ -44,7 +44,7 @@ class AccordionHelper extends Helper {
 			'accordion' => 'accordion',
 		];
 
-		$button = $this->button($heading, [
+		$buttons = $this->button($heading, [
 			'class' => 'accordion-toggle' . ($options['collapsed'] ? ' collapsed' : ''),
 			'data-toggle' => 'collapse',
 			'data-parent' => ($options['accordion'] ? "#{$options['accordion']}" : false),
@@ -53,7 +53,11 @@ class AccordionHelper extends Helper {
 			'aria-controls' => "{$id}Content",
 		]);
 
-		$title = $this->Html->tag($options['tag'], $button . $options['extraButton'], ['class' => 'panel-title']);
+		if ($options['extraButton']) {
+			$buttons .= ' ' . $options['extraButton'];
+		}
+
+		$title = $this->Html->tag($options['tag'], $buttons, ['class' => 'panel-title']);
 
 		return $this->Html->tag('div', $title, [
 			'class' => 'panel-heading',
