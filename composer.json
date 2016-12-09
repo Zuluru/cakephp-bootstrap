@@ -1,5 +1,5 @@
 {
-    "name": "Zuluru/cakephp-bootstrap",
+    "name": "zuluru/cakephp-bootstrap",
 	"version": "0.0.1",
     "description": "Zuluru Bootstrap plugin for CakePHP",
     "type": "cakephp-plugin",
