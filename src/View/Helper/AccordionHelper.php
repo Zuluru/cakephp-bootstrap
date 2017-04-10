@@ -51,6 +51,7 @@ class AccordionHelper extends Helper {
 			'url' => "#{$id}Content",
 			'aria-expanded' => ($options['collapsed'] ? 'false' : 'true'),
 			'aria-controls' => "{$id}Content",
+			'escape' => false,
 		]);
 
 		if ($options['extraButton']) {
